@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+  --Dark-gray: hsl(0, 0%, 59%);
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 18px;
+  background: var(--Dark-cyan);
+  min-height: 100vh;
+}
+
+p,
+hr {
+  color: var(--Dark-gray);
+}
+
+hr {
+  opacity: 0.4;
+}
+
+main {
+  min-height: 100vh;
+}
+
+.bg-top,
+.bg-bottom {
+  width: 400px;
+  position: absolute;
+  z-index: -1;
+}
+
+.bg-top {
+  right: 300px;
+  top: -200px;
+}
+
+.bg-bottom {
+  bottom: 100px;
+  left: 300px;
+}
+
+.container {
+  background: #fff;
+  width: 70%;
+  height: 70%;
+  margin: 90px auto;
+  border-radius: 10px;
+}
+
+.container .top img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.container .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.container .info img {
+  border-radius: 50%;
+  border: 4px solid #fff;
+  position: relative;
+  top: -50px;
+}
+
+.container .info .user {
+  width: 100%;
+}
+
+.container .info .user .user-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  top: -30px;
+}
+
+.container .info .user .user-info h3 {
+  margin-right: 10px;
+}
+
+.container .info .user .user-info p {
+  font-size: 20px;
+}
+
+.container .info .user .location {
+  position: relative;
+  top: -15px;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.container .info .user .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 30px;
+}
+
+.container .info .user .details p {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+@media only screen and (min-width: 1024px) {
+  main {
+    min-height: 100vh;
+  }
+  main .bg-img {
+    width: 100%;
+    height: 100%;
+  }
+  main .bg-img .bg-top,
+  main .bg-img .bg-bottom {
+    width: 700px;
+    position: absolute;
+  }
+  main .bg-img .bg-top {
+    left: 0px;
+  }
+  main .bg-img .bg-bottom {
+    left: 800px;
+    top: 300px;
+  }
+  main .container {
+    width: 30%;
+    height: 30%;
+  }
+}
+/*# sourceMappingURL=main.css.map */
